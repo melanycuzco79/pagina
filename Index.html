@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Creativa con Formulario</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #ff7e5f, #feb47b);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #feb47b;
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    h1, h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    .services-container {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .service-card {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      width: 30%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      color: #333;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      color: #333;
+    }
+
+    form label {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 20px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #ff7e5f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2em;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #feb47b;
+    }
+
+    iframe {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      margin: 20px 0;
+    }
+
+    .links-container a {
+      display: block;
+      margin: 10px 0;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .service-card {
+        width: 80%;
+      }
+
+      .services-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#resources">Recursos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+        <li><a href="#about">Sobre Nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="content">
+      <h1>Bienvenido a Nuestra Página</h1>
+      <p>Explora nuestros servicios, recursos interactivos y contáctanos para más información.</p>
+      <img src="imagen3.jpg" alt="500" width="1000">
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Nuestros Servicios</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <h3>Diseño Web</h3>
+        <p>Creación de sitios web modernos y adaptativos.</p>
+        <p>El diseño y desarrollo web son dos áreas interrelacionadas
+           que trabajan juntas para crear y construir sitios web exitosos.
+            El diseño web se enfoca en la apariencia visual y la usabilidad
+             de un sitio web, mientras que el desarrollo web se enfoca en la
+             funcionalidad y la implementación técnica a través de código. </p>
+             <img src="diseño.jpg" alt="20" width="400">
+      </div>
+      <div class="service-card">
+        <h3>Desarrollo de Aplicaciones</h3>
+        <p>Desarrollo de aplicaciones web y móviles.</p>
+        <p>El desarrollo de aplicaciones es el proceso 
+          sistemático de creación de software que funciona 
+          en distintos dispositivos y plataformas,
+           como computadoras, dispositivos móviles y navegadores web.
+            Este proceso abarca desde la conceptualización y 
+            diseño hasta el desarrollo, pruebas y despliegue de la aplicación. </p>
+            <img src="imagen2.jpg" alt="20">
+      </div>
+      <div class="service-card">
+        <h3>Consultoría</h3>
+        <p>Consultoría en estrategias digitales.</p>
+        <p>Un consultorio que implemente estrategias 
+          digitales se refiere a un consultorio médico
+           que utiliza herramientas y técnicas de
+            marketing digital para atraer pacientes, 
+            mejorar la experiencia del paciente y optimizar 
+            la gestión del consultorio. Esto incluye actividades 
+            como publicidad online, creación de contenido,
+             optimización para motores de búsqueda (SEO),
+              uso de redes sociales y plataformas de citas online. </p>
+              <img src="imageb1.jpg" alt="20">
+      </div>
+    </div>
+  </section>
+
+  <section id="resources">
+    <h2>Recursos Interactivos</h2>
+    <h3>🎥 Videos Recomendados</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=PtlLAetJcJM" title="Curso HTML desde CERO - Hola Mundo" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://m.youtube.com/watch?v=bYOjmW-740M&t=0s" title="Curso CSS desde CERO" allowfullscreen></iframe>
+
+    <h3>🎮 Juegos Educativos</h3>
+    <div class="links-container">
+      <a href="https://flexboxfroggy.com/#es" target="_blank">Flexbox Froggy (aprende CSS flexbox jugando)</a>
+      <a href="https://cssgridgarden.com/#es" target="_blank">Grid Garden (aprende CSS Grid jugando)</a>
+      <a href="https://codecombat.com/" target="_blank">CodeCombat (aprende programación jugando)</a>
+    </div>
+
+    <h3>🌐 Enlaces Útiles</h3>
+    <div class="links-container">
+      <a href="https://developer.mozilla.org/es/" target="_blank">MDN Web Docs (HTML, CSS y JS)</a>
+      <a href="https://www.w3schools.com/" target="_blank">W3Schools (tutoriales web)</a>
+      <a href="https://freecodecamp.org/" target="_blank">freeCodeCamp (cursos gratuitos de programación)</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contáctanos</h2>
+    <form onsubmit="event.preventDefault(); alert('Formulario enviado correctamente (simulado).');">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section id="about">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos un equipo apasionado por la tecnología y el diseño. Brindamos soluciones creativas y educativas a nuestros clientes y visitantes.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mi Empresa. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
